@@ -1,0 +1,18 @@
+---
+
+  - name: Make sure console utils are installed
+    homebrew:
+      name:
+  
+  - name: Make sure graphical utils are installed
+    homebrew_cask:
+      name:
+        - visual-studio-code
+        - iterm2
+        # - android-studio # already installed manually
+
+  - name: Make sure python and node version managers are installed
+    homebrew:
+      name:
+        - pyenv
+        - nvm

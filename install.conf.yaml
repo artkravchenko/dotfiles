@@ -3,4 +3,9 @@
 - link:
     ~/.zprofile: zprofile
 
-
+- shell:
+    - [./install-brew-stuff.sh, Installing homebrew and essential utils]
+    - command: ./run-ansible.sh
+      stdin: true
+      stdout: true
+      description: Pouring software

@@ -1,0 +1,6 @@
+---
+  - name: Make sure my productivity tools are installed
+    homebrew_cask:
+      name:
+        # - google-chrome # already installed manually
+        - gimp
