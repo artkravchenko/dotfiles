@@ -3,7 +3,8 @@
   - name: Make sure console utils are installed
     homebrew:
       name:
-  
+        - watchman
+
   - name: Make sure graphical utils are installed
     homebrew_cask:
       name:
