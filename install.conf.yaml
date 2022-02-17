@@ -5,6 +5,7 @@
     ~/.zprofile: zprofile
 
 - shell:
+    - [git submodule update --init --recursive, Installing submodules]
     - [./install-brew-stuff.sh, Installing homebrew and essential utils]
     - command: ./run-ansible.sh
       stdin: true
