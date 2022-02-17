@@ -1,0 +1,9 @@
+[alias]
+    hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+
+[user]
+	name = Art Kravchenko
+	email = contact@artkravchenko.com
+
+[core]
+    editor = code -w

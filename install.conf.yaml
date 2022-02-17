@@ -1,6 +1,7 @@
 - clean: ['~']
 
 - link:
+    ~/.gitconfig: .gitconfig
     ~/.zprofile: zprofile
 
 - shell:
