@@ -2,7 +2,8 @@
 
 - link:
     ~/.gitconfig: .gitconfig
-    ~/.zprofile: zprofile
+    ~/.zprofile: .zprofile
+    ~/.zshrc: .zshrc
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

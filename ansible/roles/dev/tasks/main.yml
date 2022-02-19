@@ -4,6 +4,9 @@
     homebrew:
       name:
         - watchman
+        - docker
+        - docker-compose
+        - pyenv
 
   - name: Make sure graphical utils are installed
     homebrew_cask:
@@ -19,7 +22,10 @@
       chdir: "~/"
       creates: "~/.nvm/nvm.sh"
 
-  - name: Make sure python and node version managers are installed
-    homebrew:
-      name:
-        - pyenv
+  - name: Install poetry
+    shell: >
+      curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+    environment:
+      POETRY_VERSION: "1.1.5"
+    args:
+      creates: "~/.poetry/bin/poetry"
